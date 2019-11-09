@@ -1,4 +1,19 @@
 <resources>
-    <string name="app_name">MenusV0</string>
-    <string name="action_settings">Settings</string>
+
+    <!-- Activity Main -->
+    <string name="app_name">Registro de usuario</string>
+
+    <!-- TextView -->
+
+    <string name="mainTextView">Hola mundo</string>
+
+    <!-- Main Menu -->
+    <string name="menuMainOption1">Opción 1</string>
+
+    <string name="menuMainOption2">Opción 2</string>
+
+    <string name="menuMainOption3">Opción 3</string>
+
+    <string name="menuMainOption4">Opción 4</string>
+
 </resources>

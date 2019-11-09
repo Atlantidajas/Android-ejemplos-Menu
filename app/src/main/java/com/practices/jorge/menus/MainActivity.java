@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,16 +41,41 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+        String mensaje;
         int id = item.getItemId();
+        Toast aviso;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+
+            case R.id.menuMainOption1:
+                mensaje = "Opcion 1 pulsada!";
+                aviso = Toast.makeText(getApplicationContext(), mensaje,
+                        Toast.LENGTH_SHORT);
+                aviso.show();
+
+
+                return true;
+
+            case R.id.menuMainOption2:
+
+                mensaje = "Opcion 2 pulsada!";
+                aviso = Toast.makeText(getApplicationContext(), mensaje,
+                        Toast.LENGTH_SHORT);
+                aviso.show();
+                return true;
+
+            case R.id.menuMainOption3:
+
+                mensaje = "Opcion 3 pulsada!";
+                aviso = Toast.makeText(getApplicationContext(), mensaje,
+                        Toast.LENGTH_SHORT);
+                aviso.show();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
 }

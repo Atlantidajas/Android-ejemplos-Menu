@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Activity Main -->
+    <string name="app_name">Registre Users</string>
+
+    <!-- TextView -->
+
+    <string name="mainTextView">Hello worlo</string>
+
+    <!-- Main Menu -->
+    <string name="menuMainOption1">Option 1</string>
+    <string name="menuMainOption2">Option 2</string>
+    <string name="menuMainOption3">Option 3</string>
+    <string name="menuMainOption4">Option 4</string>
+
+</resources>
