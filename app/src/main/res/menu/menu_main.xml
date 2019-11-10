@@ -1,21 +1,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.pdm.cfgs.menuapp.MainActivity">
+    tools:context=".MainActivity">
 
     <item android:id="@+id/menuMainOption1"
-        android:title="@string/menuMainOption1">
+          android:title="@string/menuMainOption1">
     </item>
 
     <item android:id="@+id/menuMainOption2"
-        android:title="@string/menuMainOption2">
+          android:title="@string/menuMainOption2">
     </item>
 
     <item android:id="@+id/menuMainOption3"
-        android:title="@string/menuMainOption3">
+          android:title="@string/menuMainOption3">
     </item>
 
     <item android:id="@+id/menuMainOption4"
-        android:title="@string/menuMainOption4">
+          android:title="@string/menuMainOption4">
     </item>
 
 </menu>

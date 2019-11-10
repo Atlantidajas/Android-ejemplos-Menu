@@ -11,11 +11,10 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
 
 
     @Override
@@ -38,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+    public boolean onCreateOptionsMenu(Menu menu) {//Activo, añado el menu a la activity
+        getMenuInflater().inflate( R.menu.menu_main, menu );
         return true;
     }
 
@@ -53,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menuMainOption1:
+
                 message = "Opcion 1 pulsada!";
                 aviso = Toast.makeText(getApplicationContext(), message,
                         Toast.LENGTH_SHORT);
