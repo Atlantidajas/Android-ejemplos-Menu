@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         Toast aviso;
 
+
         switch (item.getItemId()) {
 
             case R.id.menuMainOption1:
