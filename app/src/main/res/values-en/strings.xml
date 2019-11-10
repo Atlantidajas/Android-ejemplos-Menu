@@ -5,7 +5,7 @@
 
     <!-- TextView -->
 
-    <string name="mainTextView">Hello worlo</string>
+    <string name="mainTextView">Hello world</string>
 
     <!-- Main Menu -->
     <string name="menuMainOption1">Option 1</string>

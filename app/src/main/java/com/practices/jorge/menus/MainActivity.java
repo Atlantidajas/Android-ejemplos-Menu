@@ -11,15 +11,19 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setLogo(R.mipmap.ic_launcher);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -28,46 +32,45 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        String mensaje;
+
+        String message;
         int id = item.getItemId();
         Toast aviso;
 
         switch (item.getItemId()) {
 
             case R.id.menuMainOption1:
-                mensaje = "Opcion 1 pulsada!";
-                aviso = Toast.makeText(getApplicationContext(), mensaje,
+                message = "Opcion 1 pulsada!";
+                aviso = Toast.makeText(getApplicationContext(), message,
                         Toast.LENGTH_SHORT);
                 aviso.show();
-
-
                 return true;
 
             case R.id.menuMainOption2:
 
-                mensaje = "Opcion 2 pulsada!";
-                aviso = Toast.makeText(getApplicationContext(), mensaje,
+                message = "Opcion 2 pulsada!";
+                aviso = Toast.makeText(getApplicationContext(), message,
                         Toast.LENGTH_SHORT);
                 aviso.show();
                 return true;
 
             case R.id.menuMainOption3:
 
-                mensaje = "Opcion 3 pulsada!";
-                aviso = Toast.makeText(getApplicationContext(), mensaje,
+                message = "Opcion 3 pulsada!";
+                aviso = Toast.makeText(getApplicationContext(), message,
                         Toast.LENGTH_SHORT);
                 aviso.show();
                 return true;
